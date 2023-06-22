@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct Complex_numbers
+{
+        int i;
+        int j;
+        int mult;
+}s[2];
+int main()
+{
+        printf("Enter the value for i & j:");
+        scanf("%d %d",&s[0].i,&s[0].j);
+        printf("Enter the value for the second complex i & j");
+        scanf("%d %d",&s[1].i,&s[1].j);
+
+        s[0].mult=s[0].i*s[1].i;
+        s[1].mult=s[0].j*s[1].j;
+        printf("the complex number is %d+i%d",s[0].mult,s[1].mult);
+}
